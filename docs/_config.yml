@@ -1,5 +1,5 @@
 title: Hyperbolic Arxiv Daily
-description: Automatically Update Hyperbolic Papers Daily using Github Actions (Update Every 8th hours)
+description: Automatically Update Hyperbolic Papers Daily using Github Actions
 show_downloads: true
 
 github:
