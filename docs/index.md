@@ -30,6 +30,8 @@ layout: default
 |**2025-02-08**|**Fg-T2M++: LLMs-Augmented Fine-Grained Text Driven Human Motion Generation**|Yin Wang et.al.|[2502.05534](http://arxiv.org/abs/2502.05534)|null|
 |**2025-01-07**|**Hyperbolic Contrastive Learning for Hierarchical 3D Point Cloud Embedding**|Yingjie Liu et.al.|[2501.02285](http://arxiv.org/abs/2501.02285)|null|
 
+<p align=right>(<a href=#updated-on-20250427>back to top</a>)</p>
+
 ## Computation and Language
 
 | Publish Date | Title | Authors | PDF | Code |
@@ -39,6 +41,8 @@ layout: default
 |**2024-12-14**|**Towards Effective, Efficient and Unsupervised Social Event Detection in the Hyperbolic Space**|Xiaoyan Yu et.al.|[2412.10712](http://arxiv.org/abs/2412.10712)|**[link](https://github.com/xiaoyanwork/hypersed)**|
 |**2024-12-06**|**Unifying Dual-Space Embedding for Entity Alignment via Contrastive Learning**|Cunda Wang et.al.|[2412.05028](http://arxiv.org/abs/2412.05028)|**[link](https://github.com/wondercs1213/uniea)**|
 |**2024-06-15**|**Hyperbolic sentence representations for solving Textual Entailment**|Igor Petrovski et.al.|[2406.15472](http://arxiv.org/abs/2406.15472)|null|
+
+<p align=right>(<a href=#updated-on-20250427>back to top</a>)</p>
 
 ## Machine Learning
 
@@ -51,6 +55,8 @@ layout: default
 |**2025-02-24**|**Low-distortion and GPU-compatible Tree Embeddings in Hyperbolic Space**|Max van Spengler et.al.|[2502.17130](http://arxiv.org/abs/2502.17130)|null|
 |**2025-02-04**|**TransformDAS: Mapping Φ-OTDR Signals to Riemannian Manifold for Robust Classification**|Jiaju Kang et.al.|[2502.02428](http://arxiv.org/abs/2502.02428)|null|
 |**2025-01-31**|**Clustering in hyperbolic balls**|Vladimir Jaćimović et.al.|[2501.19247](http://arxiv.org/abs/2501.19247)|null|
+
+<p align=right>(<a href=#updated-on-20250427>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/FarInHeight/hyperbolic-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/FarInHeight/hyperbolic-arxiv-daily/graphs/contributors
