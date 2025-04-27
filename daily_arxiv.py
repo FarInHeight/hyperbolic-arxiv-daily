@@ -423,7 +423,7 @@ def demo(**config):
         json_to_md(
             json_file, md_file, task='Update GitPage',
             to_web=True, show_badge=show_badge,
-            use_tc=True, use_b2t=False
+            use_tc=True, use_b2t=True
         )
 
 if __name__ == "__main__":
