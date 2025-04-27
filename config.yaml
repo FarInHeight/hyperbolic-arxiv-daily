@@ -23,5 +23,5 @@ subcategories: [
     {"acronym": "cs.CV", "description": "Computer Vision and Pattern Recognition"},
     {"acronym": "cs.CL", "description": "Computation and Language"},
     {"acronym": "cs.LG", "description": "Machine Learning"},
-    {"acronym": "cs.LG", "description": "Machine Learning"},
+    {"acronym": "cs.AI", "description": "Artificial Intelligence"},
 ]
