@@ -12,9 +12,10 @@ logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S',
                     level=logging.INFO)
 
-base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
-github_url = "https://api.github.com/search/repositories"
-arxiv_url = "http://arxiv.org/"
+BASE_URL = "https://arxiv.paperswithcode.com/api/v0/papers/"
+GITHUB_URL = "https://api.github.com/search/repositories"
+ARXIV_URL = "http://arxiv.org/"
+USER_NAME_REPO = "FarInHeight/hyperbolic-arxiv-daily"
 
 def load_config(config_file:str) -> dict:
     '''
@@ -27,8 +28,8 @@ def load_config(config_file:str) -> dict:
         EXCAPE = '\"'
         QUOTA = '' # NO-USE
         OR = ' OR ' # TODO
-        def parse_filters(filters:list):
-            ret = ''
+        def parse_filters(filters:list, acronym:str):
+            ret = '('
             for idx in range(0,len(filters)):
                 filter = filters[idx]
                 if len(filter.split()) > 1:
@@ -37,9 +38,11 @@ def load_config(config_file:str) -> dict:
                     ret += (QUOTA + filter + QUOTA)
                 if idx != len(filters) - 1:
                     ret += OR
+            ret += f') AND cat:{acronym}'
             return ret
-        for k,v in config['keywords'].items():
-            keywords[k] = parse_filters(v['filters'])
+        for subcategory in config['subcategories']:
+            acronym, description = subcategory['acronym'], subcategory['description']
+            keywords[description] = (acronym, parse_filters(config['filters'], acronym))
         return keywords
     with open(config_file,'r') as f:
         config = yaml.load(f,Loader=yaml.FullLoader)
@@ -49,7 +52,7 @@ def load_config(config_file:str) -> dict:
 
 def get_authors(authors, first_author = False):
     output = str()
-    if first_author == False:
+    if not first_author:
         output = ", ".join(str(author) for author in authors)
     else:
         output = authors[0]
@@ -77,14 +80,14 @@ def get_code_link(qword:str) -> str:
         "sort": "stars",
         "order": "desc"
     }
-    r = requests.get(github_url, params=params)
+    r = requests.get(GITHUB_URL, params=params)
     results = r.json()
     code_link = None
     if results["total_count"] > 0:
         code_link = results["items"][0]["html_url"]
     return code_link
 
-def get_daily_papers(topic,query="slam", max_results=2):
+def get_daily_papers(topic, query="slam", max_results=2, acronym=None):
     """
     @param topic: str
     @param query: str
@@ -104,7 +107,7 @@ def get_daily_papers(topic,query="slam", max_results=2):
         paper_id            = result.get_short_id()
         paper_title         = result.title
         paper_url           = result.entry_id
-        code_url            = base_url + paper_id #TODO
+        code_url            = BASE_URL + paper_id #TODO
         paper_abstract      = result.summary.replace("\n"," ")
         paper_authors       = get_authors(result.authors)
         paper_first_author  = get_authors(result.authors,first_author = True)
@@ -112,6 +115,9 @@ def get_daily_papers(topic,query="slam", max_results=2):
         publish_time        = result.published.date()
         update_time         = result.updated.date()
         comments            = result.comment
+
+        if acronym is not None and acronym != primary_category:
+            continue
 
         logging.info(f"Time = {update_time} title = {paper_title} author = {paper_first_author}")
 
@@ -121,7 +127,7 @@ def get_daily_papers(topic,query="slam", max_results=2):
             paper_key = paper_id
         else:
             paper_key = paper_id[0:ver_pos]
-        paper_url = arxiv_url + 'abs/' + paper_key
+        paper_url = ARXIV_URL + 'abs/' + paper_key
 
         try:
             # source code link
@@ -198,7 +204,7 @@ def update_paper_links(filename):
                 if valid_link:
                     continue
                 try:
-                    code_url = base_url + paper_id #TODO
+                    code_url = BASE_URL + paper_id #TODO
                     r = requests.get(code_url).json()
                     repo_url = None
                     if "official" in r and r["official"]:
@@ -284,27 +290,29 @@ def json_to_md(filename,md_filename,
     # write data into README.md
     with open(md_filename,"a+") as f:
 
-        if (use_title == True) and (to_web == True):
+        if use_title and to_web:
             f.write("---\n" + "layout: default\n" + "---\n\n")
 
-        # if show_badge == True:
-        #     f.write(f"[![Contributors][contributors-shield]][contributors-url]\n")
-        #     f.write(f"[![Forks][forks-shield]][forks-url]\n")
-        #     f.write(f"[![Stargazers][stars-shield]][stars-url]\n")
-        #     f.write(f"[![Issues][issues-shield]][issues-url]\n\n")
+        if use_title and not to_web:
+            f.write("# Hyperbolic arXiv Daily\n")
 
-        if use_title == True:
-            #f.write(("<p align="center"><h1 align="center"><br><ins>CV-ARXIV-DAILY"
-            #         "</ins><br>Automatically Update CV Papers Daily</h1></p>\n"))
+        if show_badge:
+            f.write(f"[![Contributors][contributors-shield]][contributors-url]\n")
+            f.write(f"[![Forks][forks-shield]][forks-url]\n")
+            f.write(f"[![Stargazers][stars-shield]][stars-url]\n")
+            f.write(f"[![Issues][issues-shield]][issues-url]\n\n")    
+
+        if use_title:
             f.write("## Updated on " + DateNow + "\n")
         else:
             f.write("> Updated on " + DateNow + "\n")
 
         # TODO: add usage
-        f.write("> Usage instructions: [here](./docs/README.md#usage)\n\n")
+        if not to_web:
+            f.write("> Usage instructions: [here](./docs/README.md#usage)\n\n")
 
         #Add: table of contents
-        if use_tc == True:
+        if use_tc:
             f.write("<details>\n")
             f.write("  <summary>Table of Contents</summary>\n")
             f.write("  <ol>\n")
@@ -324,8 +332,8 @@ def json_to_md(filename,md_filename,
             # the head of each part
             f.write(f"## {keyword}\n\n")
 
-            if use_title == True :
-                if to_web == False:
+            if use_title :
+                if not to_web:
                     f.write("|Publish Date|Title|Authors|PDF|Code|\n" + "|---|---|---|---|---|\n")
                 else:
                     f.write("| Publish Date | Title | Authors | PDF | Code |\n")
@@ -346,24 +354,24 @@ def json_to_md(filename,md_filename,
                 top_info = top_info.replace(' ','-').replace('.','')
                 f.write(f"<p align=right>(<a href={top_info.lower()}>back to top</a>)</p>\n\n")
 
-        if show_badge == True:
+        if show_badge:
             # we don't like long string, break it!
-            f.write((f"[contributors-shield]: https://img.shields.io/github/"
-                     f"contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge\n"))
-            f.write((f"[contributors-url]: https://github.com/Vincentqyw/"
-                     f"cv-arxiv-daily/graphs/contributors\n"))
-            f.write((f"[forks-shield]: https://img.shields.io/github/forks/Vincentqyw/"
-                     f"cv-arxiv-daily.svg?style=for-the-badge\n"))
-            f.write((f"[forks-url]: https://github.com/Vincentqyw/"
-                     f"cv-arxiv-daily/network/members\n"))
-            f.write((f"[stars-shield]: https://img.shields.io/github/stars/Vincentqyw/"
-                     f"cv-arxiv-daily.svg?style=for-the-badge\n"))
-            f.write((f"[stars-url]: https://github.com/Vincentqyw/"
-                     f"cv-arxiv-daily/stargazers\n"))
-            f.write((f"[issues-shield]: https://img.shields.io/github/issues/Vincentqyw/"
-                     f"cv-arxiv-daily.svg?style=for-the-badge\n"))
-            f.write((f"[issues-url]: https://github.com/Vincentqyw/"
-                     f"cv-arxiv-daily/issues\n\n"))
+            f.write((f"[contributors-shield]: https://img.shields.io/github/contributors/"
+                     f"{USER_NAME_REPO}.svg?style=for-the-badge\n"))
+            f.write((f"[contributors-url]: https://github.com/"
+                     f"{USER_NAME_REPO}/graphs/contributors\n"))
+            f.write((f"[forks-shield]: https://img.shields.io/github/forks/"
+                     f"{USER_NAME_REPO}.svg?style=for-the-badge\n"))
+            f.write((f"[forks-url]: https://github.com/"
+                     f"{USER_NAME_REPO}/network/members\n"))
+            f.write((f"[stars-shield]: https://img.shields.io/github/stars/"
+                     f"{USER_NAME_REPO}.svg?style=for-the-badge\n"))
+            f.write((f"[stars-url]: https://github.com/"
+                     f"{USER_NAME_REPO}/stargazers\n"))
+            f.write((f"[issues-shield]: https://img.shields.io/github/issues/"
+                     f"{USER_NAME_REPO}.svg?style=for-the-badge\n"))
+            f.write((f"[issues-url]: https://github.com/"
+                     f"{USER_NAME_REPO}/issues\n\n"))
 
     logging.info(f"{task} finished")
 
@@ -376,17 +384,15 @@ def demo(**config):
     max_results = config['max_results']
     publish_readme = config['publish_readme']
     publish_gitpage = config['publish_gitpage']
-    publish_wechat = config['publish_wechat']
     show_badge = config['show_badge']
 
     b_update = config['update_paper_links']
     logging.info(f'Update Paper Link = {b_update}')
-    if config['update_paper_links'] == False:
+    if not config['update_paper_links']:
         logging.info(f"GET daily papers begin")
-        for topic, keyword in keywords.items():
+        for topic, (acronym, query) in keywords.items():
             logging.info(f"Keyword: {topic}")
-            data, data_web = get_daily_papers(topic, query = keyword,
-                                            max_results = max_results)
+            data, data_web = get_daily_papers(topic, query=query, max_results=max_results, acronym=acronym)
             data_collector.append(data)
             data_collector_web.append(data_web)
             print("\n")
@@ -403,8 +409,7 @@ def demo(**config):
             # update json data
             update_json_file(json_file,data_collector)
         # json data to markdown
-        json_to_md(json_file,md_file, task ='Update Readme', \
-            show_badge = show_badge)
+        json_to_md(json_file,md_file, task='Update Readme', show_badge=show_badge)
 
     # 2. update docs/index.md file (to gitpage)
     if publish_gitpage:
@@ -415,21 +420,11 @@ def demo(**config):
             update_paper_links(json_file)
         else:
             update_json_file(json_file,data_collector)
-        json_to_md(json_file, md_file, task ='Update GitPage', \
-            to_web = True, show_badge = show_badge, \
-            use_tc=False, use_b2t=False)
-
-    # 3. Update docs/wechat.md file
-    if publish_wechat:
-        json_file = config['json_wechat_path']
-        md_file   = config['md_wechat_path']
-        # TODO: duplicated update paper links!!!
-        if config['update_paper_links']:
-            update_paper_links(json_file)
-        else:
-            update_json_file(json_file, data_collector_web)
-        json_to_md(json_file, md_file, task ='Update Wechat', \
-            to_web=False, use_title= False, show_badge = show_badge)
+        json_to_md(
+            json_file, md_file, task='Update GitPage',
+            to_web=True, show_badge=show_badge,
+            use_tc=True, use_b2t=False
+        )
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
