@@ -348,7 +348,7 @@ def json_to_md(filename,md_filename,
             if use_b2t:
                 top_info = f"#Updated on {DateNow}"
                 top_info = top_info.replace(' ','-').replace('.','')
-                f.write(f"[![Back to Top][back-shield]][{top_info.lower()}]\n\n")
+                f.write(f"[![Back to Top][back-shield]]({top_info.lower()})\n\n")
 
         if show_badge:
             # we don't like long string, break it!
