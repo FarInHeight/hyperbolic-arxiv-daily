@@ -326,7 +326,7 @@ def json_to_md(filename,md_filename,
             if not day_content:
                 continue
             # the head of each part
-            f.write(f"## {keyword}\n\n")
+            f.write(f"\n## {keyword}\n\n")
 
             if use_title :
                 if not to_web:
@@ -348,7 +348,7 @@ def json_to_md(filename,md_filename,
             if use_b2t:
                 top_info = f"#Updated on {DateNow}"
                 top_info = top_info.replace(' ','-').replace('.','')
-                f.write(f"[⬆️]({top_info.lower()}))\n\n")
+                f.write(f"[![Back to Top][back-shield]][{top_info.lower()}]\n\n")
 
         if show_badge:
             # we don't like long string, break it!
@@ -368,6 +368,7 @@ def json_to_md(filename,md_filename,
                      f"{USER_NAME_REPO}.svg?style=for-the-badge\n"))
             f.write((f"[issues-url]: https://github.com/"
                      f"{USER_NAME_REPO}/issues\n\n"))
+            f.write(f"[back-shield]: https://img.shields.io/badge/back_to_top!-227054?style=for-the-badge")
 
     logging.info(f"{task} finished")
 
