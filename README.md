@@ -7,15 +7,10 @@
 ## Updated on 2025.04.27
 > Usage instructions: [here](./docs/README.md#usage)
 
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>[Computer Vision and Pattern Recognition](#computer-vision-and-pattern-recognition)</li>
-    <li>[Computation and Language](#computation-and-language)</li>
-    <li>[Machine Learning](#machine-learning)</li>
-  </ol>
-</details>
-
+### Table of Contents
+- [Computer Vision and Pattern Recognition](#computer-vision-and-pattern-recognition)
+- [Computation and Language](#computation-and-language)
+- [Machine Learning](#machine-learning)
 ## Computer Vision and Pattern Recognition
 
 |Publish Date|Title|Authors|PDF|Code|
@@ -29,7 +24,7 @@
 |**2025-02-08**|**Fg-T2M++: LLMs-Augmented Fine-Grained Text Driven Human Motion Generation**|Yin Wang et.al.|[2502.05534](http://arxiv.org/abs/2502.05534)|null|
 |**2025-01-07**|**Hyperbolic Contrastive Learning for Hierarchical 3D Point Cloud Embedding**|Yingjie Liu et.al.|[2501.02285](http://arxiv.org/abs/2501.02285)|null|
 
-<p align=right>([⬆️](##updated-on-20250427))</p>
+[⬆️](#updated-on-20250427))
 
 ## Computation and Language
 
@@ -41,7 +36,7 @@
 |**2024-12-06**|**Unifying Dual-Space Embedding for Entity Alignment via Contrastive Learning**|Cunda Wang et.al.|[2412.05028](http://arxiv.org/abs/2412.05028)|**[link](https://github.com/wondercs1213/uniea)**|
 |**2024-06-15**|**Hyperbolic sentence representations for solving Textual Entailment**|Igor Petrovski et.al.|[2406.15472](http://arxiv.org/abs/2406.15472)|null|
 
-<p align=right>([⬆️](##updated-on-20250427))</p>
+[⬆️](#updated-on-20250427))
 
 ## Machine Learning
 
@@ -55,7 +50,7 @@
 |**2025-02-04**|**TransformDAS: Mapping Φ-OTDR Signals to Riemannian Manifold for Robust Classification**|Jiaju Kang et.al.|[2502.02428](http://arxiv.org/abs/2502.02428)|null|
 |**2025-01-31**|**Clustering in hyperbolic balls**|Vladimir Jaćimović et.al.|[2501.19247](http://arxiv.org/abs/2501.19247)|null|
 
-<p align=right>([⬆️](##updated-on-20250427))</p>
+[⬆️](#updated-on-20250427))
 
 [contributors-shield]: https://img.shields.io/github/contributors/FarInHeight/hyperbolic-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/FarInHeight/hyperbolic-arxiv-daily/graphs/contributors
