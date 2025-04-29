@@ -7,7 +7,7 @@ layout: default
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2025.04.28
+## Updated on 2025.04.29
 ### Table of Contents
 - [Computer Vision and Pattern Recognition](#computer-vision-and-pattern-recognition)
 - [Computation and Language](#computation-and-language)
@@ -17,7 +17,8 @@ layout: default
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
-|**2025-04-23**|**EHGCN: Hierarchical Euclidean-Hyperbolic Fusion via Motion-Aware GCN for Hybrid Event Stream Perception**|Haosheng Chen et.al.|[2504.16616](http://arxiv.org/abs/2504.16616)|null|
+|**2025-04-26**|**PiercingEye: Dual-Space Video Violence Detection with Hyperbolic Vision-Language Guidance**|Jiaxu Leng et.al.|[2504.18866](http://arxiv.org/abs/2504.18866)|null|
+|**2025-04-27**|**EHGCN: Hierarchical Euclidean-Hyperbolic Fusion via Motion-Aware GCN for Hybrid Event Stream Perception**|Haosheng Chen et.al.|[2504.16616](http://arxiv.org/abs/2504.16616)|null|
 |**2025-04-08**|**Hyperbolic Category Discovery**|Yuanpei Liu et.al.|[2504.06120](http://arxiv.org/abs/2504.06120)|null|
 |**2025-04-14**|**Machine Unlearning in Hyperbolic vs. Euclidean Multimodal Contrastive Learning: Adapting Alignment Calibration to MERU**|Àlex Pujol Vidal et.al.|[2503.15166](http://arxiv.org/abs/2503.15166)|null|
 |**2025-03-18**|**HySurvPred: Multimodal Hyperbolic Embedding with Angle-Aware Hierarchical Contrastive Learning and Uncertainty Constraints for Survival Prediction**|Jiaqi Yang et.al.|[2503.13862](http://arxiv.org/abs/2503.13862)|null|
@@ -26,7 +27,7 @@ layout: default
 |**2025-02-08**|**Fg-T2M++: LLMs-Augmented Fine-Grained Text Driven Human Motion Generation**|Yin Wang et.al.|[2502.05534](http://arxiv.org/abs/2502.05534)|null|
 |**2025-01-07**|**Hyperbolic Contrastive Learning for Hierarchical 3D Point Cloud Embedding**|Yingjie Liu et.al.|[2501.02285](http://arxiv.org/abs/2501.02285)|null|
 
-[![Back to Top][back-shield]](#updated-on-20250428)
+[![Back to Top][back-shield]](#updated-on-20250429)
 
 
 ## Computation and Language
@@ -39,7 +40,7 @@ layout: default
 |**2024-12-06**|**Unifying Dual-Space Embedding for Entity Alignment via Contrastive Learning**|Cunda Wang et.al.|[2412.05028](http://arxiv.org/abs/2412.05028)|**[link](https://github.com/wondercs1213/uniea)**|
 |**2024-06-15**|**Hyperbolic sentence representations for solving Textual Entailment**|Igor Petrovski et.al.|[2406.15472](http://arxiv.org/abs/2406.15472)|null|
 
-[![Back to Top][back-shield]](#updated-on-20250428)
+[![Back to Top][back-shield]](#updated-on-20250429)
 
 
 ## Machine Learning
@@ -54,7 +55,7 @@ layout: default
 |**2025-02-04**|**TransformDAS: Mapping Φ-OTDR Signals to Riemannian Manifold for Robust Classification**|Jiaju Kang et.al.|[2502.02428](http://arxiv.org/abs/2502.02428)|null|
 |**2025-01-31**|**Clustering in hyperbolic balls**|Vladimir Jaćimović et.al.|[2501.19247](http://arxiv.org/abs/2501.19247)|null|
 
-[![Back to Top][back-shield]](#updated-on-20250428)
+[![Back to Top][back-shield]](#updated-on-20250429)
 
 [contributors-shield]: https://img.shields.io/github/contributors/FarInHeight/hyperbolic-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/FarInHeight/hyperbolic-arxiv-daily/graphs/contributors
