@@ -4,7 +4,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2025.05.06
+## Updated on 2025.05.07
 > Usage instructions: [here](./docs/README.md#usage)
 
 ### Table of Contents
@@ -26,7 +26,7 @@
 |**2025-02-08**|**Fg-T2M++: LLMs-Augmented Fine-Grained Text Driven Human Motion Generation**|Yin Wang et.al.|[2502.05534](http://arxiv.org/abs/2502.05534)|null|
 |**2025-01-07**|**Hyperbolic Contrastive Learning for Hierarchical 3D Point Cloud Embedding**|Yingjie Liu et.al.|[2501.02285](http://arxiv.org/abs/2501.02285)|null|
 
-[![Back to Top][back-shield]](#updated-on-20250506)
+[![Back to Top][back-shield]](#updated-on-20250507)
 
 
 ## Computation and Language
@@ -39,7 +39,7 @@
 |**2024-12-06**|**Unifying Dual-Space Embedding for Entity Alignment via Contrastive Learning**|Cunda Wang et.al.|[2412.05028](http://arxiv.org/abs/2412.05028)|**[link](https://github.com/wondercs1213/uniea)**|
 |**2024-06-15**|**Hyperbolic sentence representations for solving Textual Entailment**|Igor Petrovski et.al.|[2406.15472](http://arxiv.org/abs/2406.15472)|null|
 
-[![Back to Top][back-shield]](#updated-on-20250506)
+[![Back to Top][back-shield]](#updated-on-20250507)
 
 
 ## Machine Learning
@@ -48,13 +48,13 @@
 |---|---|---|---|---|
 |**2025-04-14**|**IsoSEL: Isometric Structural Entropy Learning for Deep Graph Clustering in Hyperbolic Space**|Li Sun et.al.|[2504.09970](http://arxiv.org/abs/2504.09970)|null|
 |**2025-04-11**|**HyperCore: The Core Framework for Building Hyperbolic Foundation Models with Comprehensive Modules**|Neil He et.al.|[2504.08912](http://arxiv.org/abs/2504.08912)|null|
-|**2025-04-21**|**Lorentzian Graph Isomorphic Network**|Srinitish Srinivasan et.al.|[2504.00142](http://arxiv.org/abs/2504.00142)|**[link](https://github.com/Deceptrax123/LGIN)**|
+|**2025-05-05**|**LGIN: Defining an Approximately Powerful Hyperbolic GNN**|Srinitish Srinivasan et.al.|[2504.00142](http://arxiv.org/abs/2504.00142)|**[link](https://github.com/Deceptrax123/LGIN)**|
 |**2025-04-30**|**Galaxy Walker: Geometry-aware VLMs For Galaxy-scale Understanding**|Tianyu Chen et.al.|[2503.18578](http://arxiv.org/abs/2503.18578)|null|
 |**2025-02-24**|**Low-distortion and GPU-compatible Tree Embeddings in Hyperbolic Space**|Max van Spengler et.al.|[2502.17130](http://arxiv.org/abs/2502.17130)|null|
 |**2025-02-04**|**TransformDAS: Mapping Φ-OTDR Signals to Riemannian Manifold for Robust Classification**|Jiaju Kang et.al.|[2502.02428](http://arxiv.org/abs/2502.02428)|null|
 |**2025-01-31**|**Clustering in hyperbolic balls**|Vladimir Jaćimović et.al.|[2501.19247](http://arxiv.org/abs/2501.19247)|null|
 
-[![Back to Top][back-shield]](#updated-on-20250506)
+[![Back to Top][back-shield]](#updated-on-20250507)
 
 [contributors-shield]: https://img.shields.io/github/contributors/FarInHeight/hyperbolic-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/FarInHeight/hyperbolic-arxiv-daily/graphs/contributors
