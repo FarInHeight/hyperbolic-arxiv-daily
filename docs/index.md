@@ -7,7 +7,7 @@ layout: default
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2025.05.27
+## Updated on 2025.05.28
 ### Table of Contents
 - [Computer Vision and Pattern Recognition](#computer-vision-and-pattern-recognition)
 - [Computation and Language](#computation-and-language)
@@ -17,6 +17,7 @@ layout: default
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-05-27**|**Is Hyperbolic Space All You Need for Medical Anomaly Detection?**|Alvaro Gonzalez-Jimenez et.al.|[2505.21228](http://arxiv.org/abs/2505.21228)|null|
 |**2025-04-26**|**PiercingEye: Dual-Space Video Violence Detection with Hyperbolic Vision-Language Guidance**|Jiaxu Leng et.al.|[2504.18866](http://arxiv.org/abs/2504.18866)|null|
 |**2025-04-27**|**EHGCN: Hierarchical Euclidean-Hyperbolic Fusion via Motion-Aware GCN for Hybrid Event Stream Perception**|Haosheng Chen et.al.|[2504.16616](http://arxiv.org/abs/2504.16616)|null|
 |**2025-04-08**|**Hyperbolic Category Discovery**|Yuanpei Liu et.al.|[2504.06120](http://arxiv.org/abs/2504.06120)|null|
@@ -27,7 +28,7 @@ layout: default
 |**2025-02-08**|**Fg-T2M++: LLMs-Augmented Fine-Grained Text Driven Human Motion Generation**|Yin Wang et.al.|[2502.05534](http://arxiv.org/abs/2502.05534)|null|
 |**2025-01-07**|**Hyperbolic Contrastive Learning for Hierarchical 3D Point Cloud Embedding**|Yingjie Liu et.al.|[2501.02285](http://arxiv.org/abs/2501.02285)|null|
 
-[![Back to Top][back-shield]](#updated-on-20250527)
+[![Back to Top][back-shield]](#updated-on-20250528)
 
 
 ## Computation and Language
@@ -41,7 +42,7 @@ layout: default
 |**2024-12-06**|**Unifying Dual-Space Embedding for Entity Alignment via Contrastive Learning**|Cunda Wang et.al.|[2412.05028](http://arxiv.org/abs/2412.05028)|**[link](https://github.com/wondercs1213/uniea)**|
 |**2024-06-15**|**Hyperbolic sentence representations for solving Textual Entailment**|Igor Petrovski et.al.|[2406.15472](http://arxiv.org/abs/2406.15472)|null|
 
-[![Back to Top][back-shield]](#updated-on-20250527)
+[![Back to Top][back-shield]](#updated-on-20250528)
 
 
 ## Machine Learning
@@ -58,7 +59,7 @@ layout: default
 |**2025-01-31**|**Clustering in hyperbolic balls**|Vladimir Jaćimović et.al.|[2501.19247](http://arxiv.org/abs/2501.19247)|null|
 |**2025-01-29**|**Variational Combinatorial Sequential Monte Carlo for Bayesian Phylogenetics in Hyperbolic Space**|Alex Chen et.al.|[2501.17965](http://arxiv.org/abs/2501.17965)|**[link](https://github.com/axchen7/vcsmc)**|
 
-[![Back to Top][back-shield]](#updated-on-20250527)
+[![Back to Top][back-shield]](#updated-on-20250528)
 
 [contributors-shield]: https://img.shields.io/github/contributors/FarInHeight/hyperbolic-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/FarInHeight/hyperbolic-arxiv-daily/graphs/contributors
