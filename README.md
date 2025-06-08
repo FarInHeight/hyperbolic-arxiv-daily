@@ -4,7 +4,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2025.06.07
+## Updated on 2025.06.08
 > Usage instructions: [here](./docs/README.md#usage)
 
 ### Table of Contents
@@ -29,7 +29,7 @@
 |**2025-02-08**|**Fg-T2M++: LLMs-Augmented Fine-Grained Text Driven Human Motion Generation**|Yin Wang et.al.|[2502.05534](http://arxiv.org/abs/2502.05534)|null|
 |**2025-01-07**|**Hyperbolic Contrastive Learning for Hierarchical 3D Point Cloud Embedding**|Yingjie Liu et.al.|[2501.02285](http://arxiv.org/abs/2501.02285)|null|
 
-[![Back to Top][back-shield]](#updated-on-20250607)
+[![Back to Top][back-shield]](#updated-on-20250608)
 
 
 ## Computation and Language
@@ -43,7 +43,7 @@
 |**2024-12-06**|**Unifying Dual-Space Embedding for Entity Alignment via Contrastive Learning**|Cunda Wang et.al.|[2412.05028](http://arxiv.org/abs/2412.05028)|**[link](https://github.com/wondercs1213/uniea)**|
 |**2024-06-15**|**Hyperbolic sentence representations for solving Textual Entailment**|Igor Petrovski et.al.|[2406.15472](http://arxiv.org/abs/2406.15472)|null|
 
-[![Back to Top][back-shield]](#updated-on-20250607)
+[![Back to Top][back-shield]](#updated-on-20250608)
 
 
 ## Machine Learning
@@ -52,7 +52,7 @@
 |---|---|---|---|---|
 |**2025-06-04**|**Even Faster Hyperbolic Random Forests: A Beltrami-Klein Wrapper Approach**|Philippe Chlenski et.al.|[2506.04360](http://arxiv.org/abs/2506.04360)|null|
 |**2025-05-30**|**HELM: Hyperbolic Large Language Models via Mixture-of-Curvature Experts**|Neil He et.al.|[2505.24722](http://arxiv.org/abs/2505.24722)|null|
-|**2025-05-30**|**Hyperbolic Dataset Distillation**|Wenyuan Li et.al.|[2505.24623](http://arxiv.org/abs/2505.24623)|null|
+|**2025-05-30**|**Hyperbolic Dataset Distillation**|Wenyuan Li et.al.|[2505.24623](http://arxiv.org/abs/2505.24623)|**[link](https://github.com/Guang000/Awesome-Dataset-Distillation)**|
 |**2025-05-30**|**Transformers Are Universally Consistent**|Sagar Ghosh et.al.|[2505.24531](http://arxiv.org/abs/2505.24531)|null|
 |**2025-05-30**|**Cartan Networks: Group theoretical Hyperbolic Deep Learning**|Federico Milanesio et.al.|[2505.24353](http://arxiv.org/abs/2505.24353)|null|
 |**2025-05-29**|**Surrogate-Assisted Evolutionary Reinforcement Learning Based on Autoencoder and Hyperbolic Neural Network**|Bingdong Li et.al.|[2505.19423](http://arxiv.org/abs/2505.19423)|null|
@@ -65,7 +65,7 @@
 |**2025-01-31**|**Clustering in hyperbolic balls**|Vladimir Jaćimović et.al.|[2501.19247](http://arxiv.org/abs/2501.19247)|null|
 |**2025-01-29**|**Variational Combinatorial Sequential Monte Carlo for Bayesian Phylogenetics in Hyperbolic Space**|Alex Chen et.al.|[2501.17965](http://arxiv.org/abs/2501.17965)|**[link](https://github.com/axchen7/vcsmc)**|
 
-[![Back to Top][back-shield]](#updated-on-20250607)
+[![Back to Top][back-shield]](#updated-on-20250608)
 
 [contributors-shield]: https://img.shields.io/github/contributors/FarInHeight/hyperbolic-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/FarInHeight/hyperbolic-arxiv-daily/graphs/contributors
