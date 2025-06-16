@@ -62,7 +62,7 @@ layout: default
 |**2025-05-30**|**Cartan Networks: Group theoretical Hyperbolic Deep Learning**|Federico Milanesio et.al.|[2505.24353](http://arxiv.org/abs/2505.24353)|**[link](https://github.com/cartannetworks/cartan_networks)**|
 |**2025-05-29**|**Surrogate-Assisted Evolutionary Reinforcement Learning Based on Autoencoder and Hyperbolic Neural Network**|Bingdong Li et.al.|[2505.19423](http://arxiv.org/abs/2505.19423)|null|
 |**2025-04-14**|**IsoSEL: Isometric Structural Entropy Learning for Deep Graph Clustering in Hyperbolic Space**|Li Sun et.al.|[2504.09970](http://arxiv.org/abs/2504.09970)|null|
-|**2025-04-11**|**HyperCore: The Core Framework for Building Hyperbolic Foundation Models with Comprehensive Modules**|Neil He et.al.|[2504.08912](http://arxiv.org/abs/2504.08912)|null|
+|**2025-04-11**|**HyperCore: The Core Framework for Building Hyperbolic Foundation Models with Comprehensive Modules**|Neil He et.al.|[2504.08912](http://arxiv.org/abs/2504.08912)|**[link](https://github.com/graph-and-geometric-learning/hypercore)**|
 |**2025-05-05**|**LGIN: Defining an Approximately Powerful Hyperbolic GNN**|Srinitish Srinivasan et.al.|[2504.00142](http://arxiv.org/abs/2504.00142)|**[link](https://github.com/Deceptrax123/LGIN)**|
 |**2025-05-25**|**Galaxy Walker: Geometry-aware VLMs For Galaxy-scale Understanding**|Tianyu Chen et.al.|[2503.18578](http://arxiv.org/abs/2503.18578)|null|
 |**2025-02-24**|**Low-distortion and GPU-compatible Tree Embeddings in Hyperbolic Space**|Max van Spengler et.al.|[2502.17130](http://arxiv.org/abs/2502.17130)|null|
