@@ -7,7 +7,7 @@ layout: default
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2025.06.26
+## Updated on 2025.06.27
 ### Table of Contents
 - [Computer Vision and Pattern Recognition](#computer-vision-and-pattern-recognition)
 - [Computation and Language](#computation-and-language)
@@ -20,7 +20,7 @@ layout: default
 |**2025-06-23**|**Geometry-aware Distance Measure for Diverse Hierarchical Structures in Hyperbolic Spaces**|Pengxiang Li et.al.|[2506.18533](http://arxiv.org/abs/2506.18533)|null|
 |**2025-06-23**|**A Set-to-Set Distance Measure in Hyperbolic Space**|Pengxiang Li et.al.|[2506.18529](http://arxiv.org/abs/2506.18529)|null|
 |**2025-06-23**|**Multi-Scale Representation of Follicular Lymphoma Pathology Images in a Single Hyperbolic Space**|Kei Taguchi et.al.|[2506.18523](http://arxiv.org/abs/2506.18523)|null|
-|**2025-06-19**|**HyperPath: Knowledge-Guided Hyperbolic Semantic Hierarchy Modeling for WSI Analysis**|Peixiang Huang et.al.|[2506.16398](http://arxiv.org/abs/2506.16398)|**[link](https://github.com/lambert-hpx/hyperpath)**|
+|**2025-06-26**|**HyperPath: Knowledge-Guided Hyperbolic Semantic Hierarchy Modeling for WSI Analysis**|Peixiang Huang et.al.|[2506.16398](http://arxiv.org/abs/2506.16398)|**[link](https://github.com/lambert-hpx/hyperpath)**|
 |**2025-06-12**|**Continual Hyperbolic Learning of Instances and Classes**|Melika Ayoughi et.al.|[2506.10710](http://arxiv.org/abs/2506.10710)|null|
 |**2025-06-10**|**Hyperbolic Dual Feature Augmentation for Open-Environment**|Peilin Yu et.al.|[2506.08906](http://arxiv.org/abs/2506.08906)|null|
 |**2025-06-05**|**HypeVPR: Exploring Hyperbolic Space for Perspective to Equirectangular Visual Place Recognition**|Suhan Woo et.al.|[2506.04764](http://arxiv.org/abs/2506.04764)|null|
@@ -36,7 +36,7 @@ layout: default
 |**2025-02-08**|**Fg-T2M++: LLMs-Augmented Fine-Grained Text Driven Human Motion Generation**|Yin Wang et.al.|[2502.05534](http://arxiv.org/abs/2502.05534)|null|
 |**2025-01-07**|**Hyperbolic Contrastive Learning for Hierarchical 3D Point Cloud Embedding**|Yingjie Liu et.al.|[2501.02285](http://arxiv.org/abs/2501.02285)|null|
 
-[![Back to Top][back-shield]](#updated-on-20250626)
+[![Back to Top][back-shield]](#updated-on-20250627)
 
 
 ## Computation and Language
@@ -50,7 +50,7 @@ layout: default
 |**2024-12-06**|**Unifying Dual-Space Embedding for Entity Alignment via Contrastive Learning**|Cunda Wang et.al.|[2412.05028](http://arxiv.org/abs/2412.05028)|**[link](https://github.com/wondercs1213/uniea)**|
 |**2024-06-15**|**Hyperbolic sentence representations for solving Textual Entailment**|Igor Petrovski et.al.|[2406.15472](http://arxiv.org/abs/2406.15472)|null|
 
-[![Back to Top][back-shield]](#updated-on-20250626)
+[![Back to Top][back-shield]](#updated-on-20250627)
 
 
 ## Machine Learning
@@ -76,7 +76,7 @@ layout: default
 |**2025-01-31**|**Clustering in hyperbolic balls**|Vladimir Jaćimović et.al.|[2501.19247](http://arxiv.org/abs/2501.19247)|null|
 |**2025-01-29**|**Variational Combinatorial Sequential Monte Carlo for Bayesian Phylogenetics in Hyperbolic Space**|Alex Chen et.al.|[2501.17965](http://arxiv.org/abs/2501.17965)|**[link](https://github.com/axchen7/vcsmc)**|
 
-[![Back to Top][back-shield]](#updated-on-20250626)
+[![Back to Top][back-shield]](#updated-on-20250627)
 
 [contributors-shield]: https://img.shields.io/github/contributors/FarInHeight/hyperbolic-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/FarInHeight/hyperbolic-arxiv-daily/graphs/contributors
