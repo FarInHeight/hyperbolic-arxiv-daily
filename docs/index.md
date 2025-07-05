@@ -7,7 +7,7 @@ layout: default
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2025.07.04
+## Updated on 2025.07.05
 ### Table of Contents
 - [Computer Vision and Pattern Recognition](#computer-vision-and-pattern-recognition)
 - [Computation and Language](#computation-and-language)
@@ -36,7 +36,7 @@ layout: default
 |**2025-02-08**|**Fg-T2M++: LLMs-Augmented Fine-Grained Text Driven Human Motion Generation**|Yin Wang et.al.|[2502.05534](http://arxiv.org/abs/2502.05534)|null|
 |**2025-01-07**|**Hyperbolic Contrastive Learning for Hierarchical 3D Point Cloud Embedding**|Yingjie Liu et.al.|[2501.02285](http://arxiv.org/abs/2501.02285)|null|
 
-[![Back to Top][back-shield]](#updated-on-20250704)
+[![Back to Top][back-shield]](#updated-on-20250705)
 
 
 ## Computation and Language
@@ -50,7 +50,7 @@ layout: default
 |**2024-12-06**|**Unifying Dual-Space Embedding for Entity Alignment via Contrastive Learning**|Cunda Wang et.al.|[2412.05028](http://arxiv.org/abs/2412.05028)|**[link](https://github.com/wondercs1213/uniea)**|
 |**2024-06-15**|**Hyperbolic sentence representations for solving Textual Entailment**|Igor Petrovski et.al.|[2406.15472](http://arxiv.org/abs/2406.15472)|null|
 
-[![Back to Top][back-shield]](#updated-on-20250704)
+[![Back to Top][back-shield]](#updated-on-20250705)
 
 
 ## Machine Learning
@@ -76,7 +76,7 @@ layout: default
 |**2025-01-31**|**Clustering in hyperbolic balls**|Vladimir Jaćimović et.al.|[2501.19247](http://arxiv.org/abs/2501.19247)|null|
 |**2025-01-29**|**Variational Combinatorial Sequential Monte Carlo for Bayesian Phylogenetics in Hyperbolic Space**|Alex Chen et.al.|[2501.17965](http://arxiv.org/abs/2501.17965)|**[link](https://github.com/axchen7/vcsmc)**|
 
-[![Back to Top][back-shield]](#updated-on-20250704)
+[![Back to Top][back-shield]](#updated-on-20250705)
 
 [contributors-shield]: https://img.shields.io/github/contributors/FarInHeight/hyperbolic-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/FarInHeight/hyperbolic-arxiv-daily/graphs/contributors
